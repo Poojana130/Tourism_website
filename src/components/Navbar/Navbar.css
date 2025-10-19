@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  font-family: 'Kalam', cursive;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: transparent; /* ✅ Transparent background */
+  padding: 1rem 3%;
+  z-index: 1000;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #EFDCBE;
+}
+.menu-search
+{
+     display: flex;
+     justify-content: space-between;
+     gap:20px;
+}
+/* Hamburger Icon */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: #EFDCBE;
+  cursor: pointer;
+}
+
+/* Desktop Menu Layout */
+.menu-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Links */
+.menu-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu-links li {
+  color: #EFDCBE;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-links li:hover {
+  color: #C46314;
+}
+
+/* Search box */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 25px;
+  padding: 8px 12px;
+  width: 220px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.search-box svg {
+  color: gray;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: 'Kalam', cursive;
+  color: #333;
+  background: transparent;
+  width: 100%;
+}
+
+.search-box input::placeholder {
+  color: lightgray;
+  font-style: italic;
+}
+
+/* Explore Button */
+.explore button {
+  background-color: #C46314;
+  color: #EFDCBE;
+  font-size: 16px;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.explore button:hover {
+  background-color: #a94f0f;
+}
+
+/* ------------------------------------- */
+/* RESPONSIVE STYLES */
+/* ------------------------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .search-box {
+    width: 180px;
+  }
+  .logo h3 {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-content {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(20, 15, 10, 0.85); /* ✅ slightly dark backdrop for readability */
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 10px;
+    animation: fadeIn 0.3s ease;
+  }
+
+  .menu-content.active {
+    display: flex;
+  }
+
+  .menu-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+  }
+
+  .menu-search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .explore button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small Devices */
+@media (max-width: 480px) {
+  .logo h3 {
+    font-size: 18px;
+  }
+
+  .menu-links li {
+    font-size: 16px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
