@@ -3,8 +3,8 @@
 // import viteLogo from '/vite.svg'
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import HomePage from './components/Home Page/HomePage'
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar/Navbar';
+import HomePage from './components/Home Page/HomePage';
 
 function App() {
   
@@ -13,7 +13,10 @@ function App() {
 
   <Router>
       <Navbar/>
-    <Routes path='/' element ={<HomePage/>}/>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+      </Routes>
+   
   </Router>
   )
 }

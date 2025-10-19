@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+*
+{
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+}
+.homepage
+{
+font-family: 'Kalam',cursive;
+}
+.homepage .homepagetop {
+    position: relative;           /* to allow absolute children like overlay or content */
+    background-image: url('../../assets/Images/Homepage1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;       /* scales the image to cover the container */
+    background-position: center;  /* centers the image */
+    width: 100%;                  /* full width */
+    height: 100vh;                /* full viewport height */
+    display: flex;                /* optional: for aligning content */
+    justify-content: center;      /* horizontally center content */
+    align-items: center;          /* vertically center content */
+}
+
+
+
+/* Example for content on top of the background */
+.homepage .homepagetop .content {
+    position: relative; 
+    z-index: 2;
+    
+}

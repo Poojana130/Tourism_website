@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-
+import './HomePage.css';
 
 class HomePage extends Component
 {
      render(){
           return(
-               <div>hello</div>
+               <section className="homepage">
+                    <div className="homepagetop">
+                         hello
+
+                    </div>
+               </section>
           )
      }
 };
