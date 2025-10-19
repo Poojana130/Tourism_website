@@ -18,9 +18,9 @@ font-family: 'Kalam',cursive;
     background-position: center;  /* centers the image */
     width: 100%;                  /* full width */
     height: 100vh;                /* full viewport height */
-    display: flex;                /* optional: for aligning content */
-    justify-content: center;      /* horizontally center content */
-    align-items: center;          /* vertically center content */
+    display: flex;
+    padding-top: 18%;                /* optional: for aligning content */
+    padding-left: 3%;        
 }
 
 
@@ -28,6 +28,170 @@ font-family: 'Kalam',cursive;
 /* Example for content on top of the background */
 .homepage .homepagetop .content {
     position: relative; 
-    z-index: 2;
-    
+    z-index: 2; 
+}
+.homepage .homepagetop .discover
+{
+     text-align: start;
+}
+.homepage .homepagetop .Discover h3{
+     color: #EFDCBE;
+font-size: 64px;
+font-weight: 700;
+word-wrap: break-word;
+}
+.Discover p
+{
+     color: #EFDCBE;
+font-size: 24px;
+font-weight: 400;
+word-wrap: break-word;
+}
+.Discover button
+{
+      background-color: #C46314;
+  color: #EFDCBE;
+  font-size: 16px;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 5%;
+}
+
+.homefeatures
+{
+     display: flex;
+     gap: 1%;
+     padding-right: 4%;
+}
+.homefeatures img{
+     width: 100%;
+}
+.homefeatures .image
+{
+     position: relative;
+     display: inline-block;
+}
+.homefeatures h3{
+position: absolute;
+  top: 50%;            
+  left: 60%;           
+  transform: translate(-120%, 50%); 
+   color: #EFDCBE;
+font-size: 36px;
+font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* Makes text visible on any image */
+}
+.journey
+{
+     justify-content: center;
+     align-items: center;
+     padding: 2%;
+}
+.journey h3{
+     text-align: center;
+     color: #86472C;
+font-size: 54px;
+font-weight: 700;
+}
+.journey h4{
+     color: #86472C;
+font-size: 24px;
+font-weight: 700;
+text-transform: capitalize;
+text-align: center;
+line-height: 1.6;
+}
+.journey p{
+     text-align: center;
+     max-width: 120%;
+     color: #86472C;
+font-size: 22px;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 1.6;
+padding-top: 1%;
+}
+.discover h3{
+     color: #86472C;
+font-size: 54px;
+font-weight: 700;
+padding-left: 8%;
+}
+.discover p{
+     color: #86472C;
+font-size: 24px;
+font-weight: 400;
+text-transform: capitalize;
+padding-left: 8%;
+}
+.destination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  margin-left: -2%;
+  padding-top: 3%;
+}
+
+.destination-card {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  border-radius: 0 0 12px 12px;
+}
+
+.overlay h3 {
+  color: #EFDCBE;
+font-size: 36px;
+font-weight: 700;
+  margin: 0;
+}
+
+.overlay p {
+  color: #EFDCBE;
+ font-size: 16px;
+font-weight: 400;
+text-transform: capitalize;
+font-style: italic;
+  margin-top: 4px;
+}
+
+/* Optional: responsive stacking for small screens */
+@media (max-width: 768px) {
+  .destination-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .destination-card {
+    width: 90%;
+    height: 180px;
+  }
 }
