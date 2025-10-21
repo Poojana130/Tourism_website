@@ -182,7 +182,139 @@ text-transform: capitalize;
 font-style: italic;
   margin-top: 4px;
 }
+.homepagefea
+{
+     color: #86472C;
+font-size: 54px;
+font-weight: 700;
+word-wrap: break-word;
+text-align: center;
+padding: 3%;
+}
 
+
+.themes-container {
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;   /* ensures equal card height */
+  gap: 25px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.theme-card {
+    background-color: #EFDCBE;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* pushes button to bottom */
+  text-align: center;
+  width: 280px;
+  min-height: 500px; /* ensures same card height */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.theme-card:hover {
+ transform: translateY(-10px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.theme-image {
+ width: 100%;
+  height: 290px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  overflow: hidden;
+}
+
+.theme-image img {
+    width: 100%;
+  height: 100%;
+  object-fit: cover; /* ensures image fully covers without gaps */
+  transition: transform 0.4s ease;
+}
+.theme-card:hover .theme-image img {
+  transform: scale(1.08);
+}
+.theme-content
+{
+       flex-grow: 1; /* pushes the button down */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.theme-card h3 {
+color: #86472C;
+font-size: 36px;
+font-weight: 700;
+ margin: 15px 0 10px 0;
+}
+
+.theme-card p {
+  color: #86472C;
+font-size: 16px;
+font-weight: 400;
+text-transform: capitalize;
+  line-height: 1.4;
+    margin: 0 10px 15px 10px;
+  flex-grow: 1; 
+  
+}
+
+.theme-card button {
+  background-color: #7a3b2e;
+  color: #EFDCBE;
+font-size: 16px;
+font-family: "Kalam",cursive;
+font-weight: 700;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+   align-self: center;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-bottom: 15px;
+}
+
+.theme-card button:hover {
+  background-color: #5c271d;
+}
+
+.seasonal h3
+{
+ text-align: center;
+ color: #86472C;
+font-size: 54px;
+font-weight: 700;
+word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .themes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theme-card {
+    width: 100%;
+    min-height: 450px;
+}
+
+  .theme-image {
+    height: 300px;
+    padding: 0px 0px 20px 0px;
+      border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  }
+}
 /* Optional: responsive stacking for small screens */
 @media (max-width: 768px) {
   .destination-container {
