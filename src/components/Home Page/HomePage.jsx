@@ -12,6 +12,12 @@ import Heritage1 from '../../assets/Images/Heritage.png';
 import Spiritual1 from '../../assets/Images/Spiritual.png';
 import Nature1 from '../../assets/Images/Nature.png';
 import Adventure1 from '../../assets/Images/Adventures.png';
+import winterImg from '../../assets/Images/WinterImage.svg';
+import { IoArrowBackCircleOutline } from "react-icons/io5";
+import { IoArrowForwardCircleOutline } from "react-icons/io5";
+import Traveller1 from '../../assets/Images/Traveller1.svg';
+import Traveller2 from '../../assets/Images/Traveller2.svg';
+import Traveller3 from '../../assets/Images/Traveller3.svg';
 
 class HomePage extends Component
 {
@@ -146,6 +152,65 @@ class HomePage extends Component
 
     <div className="seasonal">
      <h3>Seasonal Suggestions</h3>
+     <div className="winter-card">
+      <div>
+        <IoArrowBackCircleOutline className="arrows"/>
+      </div>
+      <div className="text-box">
+        <h2 className="title">
+          Winter Wonders <span>(November – February)</span>
+        </h2>
+
+        <h3 className="subtitle">Best Places to Visit in Winter 2025</h3>
+
+        <p className="description">
+          Experience the charm of snow-covered mountains, desert festivals, and cozy hill stations.
+          <br />
+          Explore Shimla, Manali, Kashmir, Udaipur, or the magical{" "}
+          Rann of Kutch under the stars.
+        </p>
+      </div>
+
+      <div className="image-box">
+        <img src={winterImg} alt="Winter Destination" />
+      </div>
+
+      <div>
+        <IoArrowForwardCircleOutline className="arrows"/>
+      </div>
+
+     </div>
+    </div>
+
+    <div className="travelstories">
+      <h3>Traveler Stories</h3>
+      <div className="stories">
+        <div>
+          <img src={Traveller1} alt="" />
+          <h3>Ananya Sharma,<span>New Delhi</span></h3>
+          <h4>My First Trip to Varanasi – A Spiritual Awakening</h4>
+          <p>Varanasi wasn’t just a destination — it was an experience that touched my soul. Watching the Ganga Aarti under the twilight sky made me feel the divine rhythm of life. The city breathes spirituality at every corner.</p>
+          <a href="">Read More......</a>
+        </div>
+
+         <div>
+          <img src={Traveller2} alt="" />
+          <h3>Rohit Verma,<span> Bengaluru</span></h3>
+          <h4>Trekking: My First Step into the Clouds</h4>
+          <p>As a first-time trekker, the Triund trail in Himachal Pradesh challenged me but rewarded me with views I’ll never forget. Camping under a million stars changed how I see adventure forever..  </p>
+          <a href="">Read More......</a>
+        </div>
+
+         <div>
+          <img src={Traveller3} alt="" />
+          <h3>Ayesha Khan, <span>Lucknow</span></h3>
+          <h4>Street Food Safari in Old Delhi</h4>
+          <p>From spicy chaat to creamy kulfi, every bite in Old Delhi was a celebration of flavors. Walking through Chandni Chowk’s lanes, I realized that food here is not just a meal — it’s a story of culture.</p>
+          <a href="">Read More......</a>
+        </div>
+
+      </div>
+
     </div>
 
                     

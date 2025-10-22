@@ -36,7 +36,7 @@ font-family: 'Kalam',cursive;
 }
 .homepage .homepagetop .Discover h3{
      color: #EFDCBE;
-font-size: 64px;
+font-size: 40px;
 font-weight: 700;
 word-wrap: break-word;
 }
@@ -66,7 +66,7 @@ word-wrap: break-word;
 {
      display: flex;
      gap: 1%;
-     padding-right: 4%;
+     padding-right: 3%;
 }
 .homefeatures img{
      width: 100%;
@@ -82,7 +82,7 @@ position: absolute;
   left: 60%;           
   transform: translate(-120%, 50%); 
    color: #EFDCBE;
-font-size: 36px;
+font-size: 24px;
 font-weight: 700;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* Makes text visible on any image */
 }
@@ -120,14 +120,14 @@ padding-top: 1%;
      color: #86472C;
 font-size: 54px;
 font-weight: 700;
-padding-left: 8%;
+padding-left: 6%;
 }
 .discover p{
      color: #86472C;
 font-size: 24px;
 font-weight: 400;
 text-transform: capitalize;
-padding-left: 8%;
+padding-left: 6%;
 }
 .destination-container {
   display: flex;
@@ -143,7 +143,7 @@ padding-left: 8%;
 
 .destination-card {
   position: relative;
-  width: 320px;
+  width: 230px;
   height: 250px;
   background-size: cover;
   background-position: center;
@@ -198,7 +198,7 @@ padding: 3%;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;   /* ensures equal card height */
-  gap: 25px;
+  gap: 20px;
   margin-top: 20px;
   position: relative;
   z-index: 2;
@@ -211,8 +211,8 @@ padding: 3%;
   flex-direction: column;
   justify-content: space-between; /* pushes button to bottom */
   text-align: center;
-  width: 280px;
-  min-height: 500px; /* ensures same card height */
+  width: 200px;
+  min-height: 200px; /* ensures same card height */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
@@ -295,6 +295,146 @@ font-weight: 700;
 font-size: 54px;
 font-weight: 700;
 word-wrap: break-word;
+}
+
+.winter-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-family: 'Kalam', cursive;
+  position: relative;
+  margin: 60px auto;
+  max-width: 900px;
+}
+
+.text-box {
+  background-color: #f5e3cf;
+  padding: 28px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 950px;
+  position: absolute;
+  left: -50px;
+  z-index: 2;
+  transform: scale(0.5);
+}
+
+.text-box .title {
+  color: #7a3e2e;
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.text-box .title span {
+  font-size: 24px;
+  color: #8b4e3b;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 500;
+  color: #5b2b1f;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 24px;
+  color: #86472C;
+  line-height: 1.5;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.image-box img {
+  width:450px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  margin-left: 250px;
+}
+.arrows
+{
+  color: #86472C;
+  transform: scale(1.9);
+}
+
+.travelstories h3 
+{
+  text-align: center;
+  color: #86472C;
+font-size: 54px;
+font-weight: 700;
+}
+
+.stories
+{
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+  text-align: center;
+
+}
+.stories img{
+  width: 200px;
+}
+.stories h3{
+  color: #86472C;
+font-size: 28px;
+font-weight: 700;
+  text-align: center;
+}
+
+.stories h3 span
+{
+  color: #86472C;
+font-size: 20px;
+font-weight: 700;
+}
+.stories h4{
+  color: #86472C;
+font-size: 13px;
+font-weight: 700;
+}
+.stories p{
+  color: #86472C;
+font-size: 16px;
+font-weight: 400;
+text-align: justify;
+}
+.stories a{
+  color: #86472C;
+font-size: 20px;
+font-weight: 700;
+text-align:start;
+text-decoration: none;
+padding-top: 20px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .winter-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-box {
+    position: static;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .image-box img {
+    width: 90%;
+    margin: 0;
+  }
 }
 
 @media (max-width: 768px) {

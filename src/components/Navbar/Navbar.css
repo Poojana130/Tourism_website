@@ -25,8 +25,8 @@
 
 /* Logo */
 .logo h3 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 400;
   color: #EFDCBE;
 }
 .menu-search
@@ -59,8 +59,8 @@
 
 .menu-links li {
   color: #EFDCBE;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 400;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -76,7 +76,7 @@
   background: white;
   border-radius: 25px;
   padding: 8px 12px;
-  width: 220px;
+  width: 120px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
 
@@ -105,9 +105,9 @@
 .explore button {
   background-color: #C46314;
   color: #EFDCBE;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Kalam", cursive;
-  font-weight: 700;
+  font-weight: 400;
   border-radius: 25px;
   padding: 10px 20px;
   border: none;
