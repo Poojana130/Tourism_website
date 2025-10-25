@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
+
+.footer {
+  background-color: #EFDCBE;
+  padding: 50px 60px;
+  font-family: 'Kalam', cursive;
+  
+}
+
+.footer-container {
+  display: flex;
+  gap: 90px;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+   width: calc(25% - 70px);
+  
+}
+
+.footer-column h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #86472C;
+font-size: 24px;
+}
+.footer-column h4
+{
+     font-weight: 700;
+  margin-bottom: 10px;
+  color: #86472C;
+font-size: 24px;
+font-weight: 700;  
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+  cursor: pointer;
+  color: #86472C;
+font-size: 18px;
+font-weight: 400;
+word-wrap: break-word;
+}
+
+.footer-column p {
+  line-height: 1.5;
+  color: #86472C;
+font-size: 18px;
+font-weight: 400;
+max-width: 120%;
+text-align: justify;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  color: #86472C;
+font-size: 24px;
+font-weight: 400;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .footer-column {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -5,6 +5,7 @@
      padding: 0%;
      margin: 0%;
      box-sizing: border-box;
+     
 }
 .homepage
 {
@@ -189,19 +190,34 @@ font-size: 54px;
 font-weight: 700;
 word-wrap: break-word;
 text-align: center;
-padding: 3%;
+padding-top: 2%;
+position: relative;
+  z-index: 5;
+  margin-bottom: 100px;
 }
 
 
 .themes-container {
-    display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;   /* ensures equal card height */
-  gap: 20px;
+  gap: 10px;
   margin-top: 20px;
   position: relative;
-  z-index: 2;
+  z-index: 50;
+  display: flex;
+  flex-wrap: nowrap;     
+  overflow-x: auto;        
+  gap: 20px;
+  padding: 10px 0px;
+  scroll-behavior: smooth;
+}
+.themes-container::-webkit-scrollbar {
+  display: none;
+}
+
+.themes-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .theme-card {
@@ -209,14 +225,17 @@ padding: 3%;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0; 
   justify-content: space-between; /* pushes button to bottom */
   text-align: center;
-  width: 200px;
-  min-height: 200px; /* ensures same card height */
+   min-width: 250px;   
+  max-width: 250px;   
+min-height: 600px; /* ensures same card height */
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
   position: relative;
+  z-index: 51;
 }
 
 .theme-card:hover {
@@ -226,10 +245,10 @@ padding: 3%;
 
 .theme-image {
  width: 100%;
-  height: 290px;
+  height: 280px;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .theme-image img {
@@ -309,7 +328,7 @@ word-wrap: break-word;
 }
 
 .text-box {
-  background-color: #f5e3cf;
+ background-color: #f5e3cf;
   padding: 28px 35px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -374,7 +393,7 @@ font-weight: 700;
 
 .stories
 {
-  padding: 2%;
+  padding: 3%;
   display: flex;
   justify-content: center;
   gap: 5%;

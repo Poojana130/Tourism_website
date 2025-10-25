@@ -7,17 +7,20 @@ import Food from '../../assets/Images/Food.svg';
 import Rajasthan from '../../assets/Images/Rajasthan.svg';
 import Kerala from '../../assets/Images/Kerala.svg';
 import Goa from '../../assets/Images/Goa.png';
-import Karnataka from '../../assets/Images/Karnataka.svg';
+import Karnataka from '../../assets/Images/Karnataka.jpg';
 import Heritage1 from '../../assets/Images/Heritage.png';
 import Spiritual1 from '../../assets/Images/Spiritual.png';
 import Nature1 from '../../assets/Images/Nature.png';
 import Adventure1 from '../../assets/Images/Adventures.png';
+import Food1 from '../../assets/Images/Food.png';
+import Festivals from '../../assets/Images/Festivals.png';
 import winterImg from '../../assets/Images/WinterImage.svg';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import Traveller1 from '../../assets/Images/Traveller1.svg';
 import Traveller2 from '../../assets/Images/Traveller2.svg';
 import Traveller3 from '../../assets/Images/Traveller3.svg';
+
 
 class HomePage extends Component
 {
@@ -71,6 +74,19 @@ class HomePage extends Component
       description:
         "Feel The Thrill With Activities Like Trekking, Rafting, Skydiving & More — Adventure Awaits For The Brave & Curious.",
     },
+      {
+      image: Food1,
+      title: "Food",
+      description:
+        "Taste the soul of India through its regional cuisines and vibrant street food. Each bite carries centuries of tradition, spice, and flavor.",
+    },
+     {
+      image: Festivals,
+      title: "Festivals",
+      description:
+        "Celebrate life with India’s grand festivals — Diwali, Holi, Durga Puja, Onam, and countless others. A land where every season, color, and sound turns into a joyful celebration.",
+    },
+
   ];
           return(
                <section className="homepage">
