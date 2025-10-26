@@ -63,86 +63,415 @@ font-size: 54px;
 text-align: center;
 font-weight: 700;
 }
-
-.destination-cards-container {
-  display: flex;
+.north-card
+{
+  padding-top: 3%;
+ display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
-  padding: 20px;
-  background: transparent;
-}
-
-.destination-card {
-  width: 220px;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-}
-
-.destination-card:hover {
-  transform: translateY(-5px);
-
-}
-
-.card-image img {
+  gap: 5px;
   width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 8px;
+  padding: 3%;
+  justify-items: center;
 }
-
-.card-content {
-  padding: 10px;
-  flex-grow: 1;
+.ncard
+{
+    width: 250px; 
+  padding: 10px 0;
+    flex: 1 1 calc(20% - 2%);
+  max-width: 240px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
-.card-content h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 4px;
-  color: #2a7cf0;
+.ncard h3{
+  text-align: justify;
+  color: #86472C;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.6;
+}
+.ncard img{
+  width: 200px;
+}
+.ncard h4{
+color: #86472C;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.6;
 }
 
-.card-content h4 {
-  font-size: 14px;
-  font-style: italic;
-  margin-bottom: 8px;
-  color: #555;
+.ncard p{
+  color: #86472C;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+max-width: 180px;
+min-height: 120px;
+}
+.ncard button
+{
+  text-align: center;
+  color: #86472C;
+font-weight: 700;
+padding: 5%;
+width: 50%;
+margin-top: 5%;
+background: transparent;
+border: 1px solid #86472C;
+border-radius: 8px;
+font-family: "Kalam",cursive;
 }
 
-.card-content p {
-  font-size: 12px;
-  flex-grow: 1;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.card-content button {
-  font-family: 'Kalam', cursive;
-  font-size: 12px;
-  background-color: #2a7cf0;
+.ncard button:hover {
+  background: #86472C;
   color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 6px 10px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s;
 }
 
-.card-content button:hover {
-  background-color: #195bb5;
+.south-India
+{
+  padding: 2%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .destination-cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
+.south-India h3 
+{
+   color: #86472C;
+font-size: 54px;
+text-align: center;
+font-weight: 700;
 }
 
+.southcard
+{
+    padding-top: 3%;
+ display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 3%;
+  justify-items: center;
+}
+.scard 
+{
+     width: 250px; 
+  padding: 10px 0;
+    flex: 1 1 calc(20% - 2%);
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.scard h3 
+{
+   text-align: justify;
+  color: #86472C;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.6;
+}
+
+.scard img 
+{
+  width: 200px;
+}
+
+.scard h4 
+{
+  color: #86472C;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.6;
+}
+
+.scard p
+{
+color: #86472C;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+max-width: 180px;
+min-height: 120px;
+}
+
+.scard button
+{
+  text-align: center;
+  color: #86472C;
+font-weight: 700;
+padding: 5%;
+width: 50%;
+margin-top: 5%;
+background: transparent;
+border: 1px solid #86472C;
+border-radius: 8px;
+font-family: "Kalam",cursive;
+}
+
+.scard button:hover
+{
+    background: #86472C;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.west-India
+{
+  padding: 2%;
+}
+.west-India h3 
+{
+  color: #86472C;
+font-size: 54px;
+text-align: center;
+font-weight: 700;
+}
+.westcard
+{
+  padding-top: 3%;
+ display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 3%;
+  justify-items: center;
+}
+.wcard 
+{
+       width: 250px; 
+  padding: 10px 0;
+    flex: 1 1 calc(20% - 2%);
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wcard h3{
+  text-align: justify;
+  color: #86472C;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.6;
+}
+.wcard img 
+{
+   width: 200px;
+}
+.wcard h4 
+{
+   color: #86472C;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.6;
+}
+
+.wcard p 
+{
+  color: #86472C;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+max-width: 180px;
+min-height: 120px;
+}
+.wcard button 
+{
+  text-align: center;
+  color: #86472C;
+font-weight: 700;
+padding: 5%;
+width: 50%;
+margin-top: 5%;
+background: transparent;
+border: 1px solid #86472C;
+border-radius: 8px;
+font-family: "Kalam",cursive;
+}
+
+.wcard button:hover
+{
+  background: #86472C;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.east-India
+{
+  padding: 2%;
+}
+.east-India h3 
+{
+    color: #86472C;
+font-size: 54px;
+text-align: center;
+font-weight: 700;
+}
+.east-card 
+{
+    padding-top: 3%;
+ display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 3%;
+  justify-items: center;
+}
+
+.ecard 
+{
+         width: 250px; 
+  padding: 10px 0;
+    flex: 1 1 calc(20% - 2%);
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ecard h3 
+{
+  text-align: justify;
+  color: #86472C;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.6;
+}
+
+.ecard img  
+{
+  width: 200px;
+}
+
+.ecard h4 
+{
+   color: #86472C;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.6;
+}
+
+.ecard p{
+   color: #86472C;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+max-width: 180px;
+min-height: 120px;
+}
+
+.ecard button
+{
+   text-align: center;
+  color: #86472C;
+font-weight: 700;
+padding: 5%;
+width: 50%;
+margin-top: 5%;
+background: transparent;
+border: 1px solid #86472C;
+border-radius: 8px;
+font-family: "Kalam",cursive;
+}
+.ecard button:hover{
+  background: #86472C;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.central-India
+{
+  padding: 2%;
+}
+.central-India h3 
+{
+   color: #86472C;
+font-size: 54px;
+text-align: center;
+font-weight: 700;
+}
+.central-card 
+{
+  padding-top: 3%;
+ display: grid;
+grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  padding: 3%;
+  justify-items: center;
+}
+
+.ccard 
+{
+   width: 250px; 
+  padding: 10px 0;
+  max-width: 240px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.ccard h3 
+{
+  text-align: justify;
+  color: #86472C;
+font-size: 24px;
+font-weight: 700;
+line-height: 1.6;
+}
+
+.ccard img 
+{
+  width:200px;
+}
+
+.ccard h4{
+color: #86472C;
+font-size: 16px;
+font-weight: 700;
+line-height: 1.6;
+}
+
+.ccard p 
+{
+  color: #86472C;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.6;
+max-width: 180px;
+min-height: 120px;
+}
+
+.ccard button 
+{
+   text-align: center;
+  color: #86472C;
+font-weight: 700;
+padding: 5%;
+width: 50%;
+margin-top: 5%;
+background: transparent;
+border: 1px solid #86472C;
+border-radius: 8px;
+font-family: "Kalam",cursive;
+}
+
+.ccard button:hover
+{
+   background: #86472C;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
